@@ -34,6 +34,10 @@ jobs:
       - name: Run checker
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          BUY_BELOW: ${{ vars.BUY_BELOW }}
+          ALERT_DROP_PCT: ${{ vars.ALERT_DROP_PCT }}
+          ALERT_RISE_PCT: ${{ vars.ALERT_RISE_PCT }}
+          ALWAYS_NOTIFY: ${{ vars.ALWAYS_NOTIFY }}
         run: |
           python -u src/main.py
 
