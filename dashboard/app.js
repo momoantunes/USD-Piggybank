@@ -33,24 +33,34 @@ function drawLineChart(canvas, points) {
 
   const pad = 30;
   const W = canvas.width, H = canvas.height;
-  const ys = points.map(p => p.bid);
 
-let minY = Math.min(...ys);
-let maxY = Math.max(...ys);
+  const ys = points.map((p) => p.bid);
 
-// Se todos os pontos forem iguais, cria margem artificial
-if (minY === maxY) {
-  const pad = minY * 0.002; // 0.2%
-  minY -= pad;
-  maxY += pad;
-}
+  let minY = Math.min(...ys);
+  let maxY = Math.max(...ys);
 
-const rangeY = maxY - minY;
+  const isFlat = ys.every((v) => v === ys[0]);
 
+  // Se todos os pontos forem iguais, cria margem artificial (padding) pra não colar no rodapé
+  if (isFlat) {
+    const padding = minY * 0.002; // 0.2%
+    minY -= padding;
+    maxY += padding;
+  }
+
+  const rangeY = (maxY - minY) || 1;
+
+  // Mensagem de estabilidade (antes do desenho)
+  if (isFlat) {
+    ctx.font = "12px system-ui";
+    ctx.fillStyle = "#6b7280";
+    ctx.fillText("Sem variação no período", pad + 10, pad + 20);
+  }
 
   const xTo = (i) => pad + (i / (ys.length - 1)) * (W - pad * 2);
   const yTo = (v) => (H - pad) - ((v - minY) / rangeY) * (H - pad * 2);
 
+  // eixos
   ctx.globalAlpha = 0.6;
   ctx.beginPath();
   ctx.moveTo(pad, pad);
@@ -59,13 +69,21 @@ const rangeY = maxY - minY;
   ctx.stroke();
   ctx.globalAlpha = 1;
 
+  // linha
   ctx.beginPath();
   ctx.moveTo(xTo(0), yTo(ys[0]));
   for (let i = 1; i < ys.length; i++) ctx.lineTo(xTo(i), yTo(ys[i]));
   ctx.stroke();
 
-  ctx.fillText(`min ${minY.toFixed(4)}`, pad, pad - 10);
-  ctx.fillText(`max ${maxY.toFixed(4)}`, pad + 120, pad - 10);
+  // labels min/max (mostra os valores reais quando flat, sem o padding “falso”)
+  if (isFlat) {
+    const v = ys[0];
+    ctx.fillText(`min ${v.toFixed(4)}`, pad, pad - 10);
+    ctx.fillText(`max ${v.toFixed(4)}`, pad + 120, pad - 10);
+  } else {
+    ctx.fillText(`min ${minY.toFixed(4)}`, pad, pad - 10);
+    ctx.fillText(`max ${maxY.toFixed(4)}`, pad + 120, pad - 10);
+  }
 }
 
 function getSelectedKey() {
@@ -106,6 +124,7 @@ async function render(key) {
     document.getElementById("delta").textContent = "—";
     document.getElementById("deltaMeta").textContent = "";
     document.getElementById("source").textContent = "—";
+    document.getElementById("chartMeta").textContent = "";
     return;
   }
 
@@ -124,7 +143,7 @@ async function render(key) {
 
   document.getElementById("source").textContent = last.source || "—";
 
-  const slice = history.slice(-60).map(x => ({ bid: Number(x.bid) }));
+  const slice = history.slice(-60).map((x) => ({ bid: Number(x.bid) }));
   drawLineChart(document.getElementById("chart"), slice);
   document.getElementById("chartMeta").textContent = `${conf.label} • mostrando ${slice.length} pontos`;
 }
@@ -132,15 +151,15 @@ async function render(key) {
 (function main() {
   const key = getSelectedKey();
   setSelectedKey(key); // garante URL coerente
-  render(key).catch(err => console.error(err));
+  render(key).catch((err) => console.error(err));
 
   document.getElementById("btnUSD").addEventListener("click", () => {
     setSelectedKey("usd");
-    render("usd").catch(err => console.error(err));
+    render("usd").catch((err) => console.error(err));
   });
 
   document.getElementById("btnEUR").addEventListener("click", () => {
     setSelectedKey("eur");
-    render("eur").catch(err => console.error(err));
+    render("eur").catch((err) => console.error(err));
   });
 })();
