@@ -1,6 +1,10 @@
-#  USD Piggybank
+#  FX Piggybank
 
-A **serverless personal product** designed to track the USD/BRL exchange rate, store historical data, trigger **smart alerts**, and visualize everything through a **public dashboard** — all running **100% for free** using GitHub Actions.
+A **serverless personal product** designed to track **multiple currency exchange rates**
+(such as USD/BRL and EUR/BRL), store historical data, trigger **smart alerts**, and
+visualize everything through a **public dashboard** — all running **100% for free**
+using GitHub Actions.
+
 
 >  **Philosophy**  
 > Discipline beats perfect timing.  
@@ -10,12 +14,12 @@ A **serverless personal product** designed to track the USD/BRL exchange rate, s
 
 ##  Overview
 
-USD Piggybank is both:
-- a **practical financial radar** for daily monitoring, and
+fx Piggybank is both:
+- Fetches **multiple currency pairs** (USD/BRL, EUR/BRL) twice a day (scheduled)
 - a **portfolio project** showcasing automation, resilience, and serverless architecture.
 
 ### Key capabilities
--  Fetches **USD/BRL** twice a day (scheduled)
+-  Fetches **USD/BRL** and **EUR/BRL** twice a day (scheduled)
 -  Stores historical data in versioned JSON
 -  Sends alerts via **Discord webhook** using configurable rules
 -  Publishes a live **GitHub Pages dashboard**
@@ -26,7 +30,7 @@ USD Piggybank is both:
 ##  Live Demo
 
  **Dashboard**  
-https://momoantunes.github.io/USD-Piggybank/
+https://momoantunes.github.io/FX-Piggybank
 
 The dashboard is automatically redeployed every time new data is collected.
 
@@ -43,6 +47,7 @@ GitHub Actions (Cron - 2x/day)
    - BCB PTAX (fallback)
             |
             +--> data/usdbrl.json (history)
+            +--> data/eurbrl.json (history)
             |
             +--> Discord Webhook (alerts)
             |
@@ -67,6 +72,7 @@ Supported triggers:
 -  Price below a target (`BUY_BELOW`)
 -  Percentage drop (`ALERT_DROP_PCT`)
 -  Percentage rise (`ALERT_RISE_PCT`)
+- Per-currency thresholds (e.g. different targets for USD and EUR)
 -  Optional `ALWAYS_NOTIFY` flag (useful for testing)
 
 >  This project does **not** perform automated buying or selling.
@@ -75,11 +81,13 @@ Supported triggers:
 
 ##  Dashboard Features
 
-- Latest USD/BRL quote
+- Latest exchange rate per selected currency (USD/BRL, EUR/BRL)
 - Variation compared to previous check
 - Data source indicator (Spot vs PTAX fallback)
 - Lightweight line chart (recent history)
 - Fully static (HTML + vanilla JS)
+- Currency selector (single-page dashboard)
+
 
 ---
 
@@ -119,7 +127,7 @@ python src/main.py
 ```
 
 You can also trigger execution manually via:  
-**Actions → USD Piggybank - 2x/day → Run workflow**
+**Actions → FX Piggybank - 2x/day → Run workflow**
 
 ---
 
@@ -142,7 +150,7 @@ It was built as a **real personal tool**, not a toy example.
 - Daily / weekly digest
 - Volatility and min/max indicators
 - Manual purchase tracking (non-automated)
-- Multi-currency support (EUR, BTC, etc.)
+- Additional currencies (BTC, GBP, etc.)
 
 ---
 
