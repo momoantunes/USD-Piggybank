@@ -1,4 +1,4 @@
-name: USD Piggybank - 2x/day
+name: FX Piggybank - 2x/day
 
 on:
   schedule:
