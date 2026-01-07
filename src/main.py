@@ -69,8 +69,8 @@ def main() -> int:
     buy_below_eur = _get_float_env("BUY_BELOW_EUR")
 
     pairs = [
-        ("USD", "BRL", Path("data/usdbrl.json"), buy_below_usd),
-        ("EUR", "BRL", Path("data/eurbrl.json"), buy_below_eur),
+        ("USD", "BRL", Path("dashboard/react-dashboard/public/data/usdbrl.json"), buy_below_usd),
+        ("EUR", "BRL", Path("dashboard/react-dashboard/public/data/eurbrl.json"), buy_below_eur),
     ]
 
     blocks_to_send: list[str] = []

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Node/React
+node_modules/
+dashboard/react-dashboard/node_modules/
+dashboard/react-dashboard/build/
+dashboard/react-dashboard/dist/
+dashboard/react-dashboard/.env
+
+# VSCode
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db

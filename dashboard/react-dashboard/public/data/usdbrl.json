@@ -1,0 +1,366 @@
+[
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-27T01:22:05.715882+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-27T01:33:23.368793+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-27T01:44:51.226333+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-27T01:55:10.541828+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-27T13:27:15.643104+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-27T20:28:21.135773+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-28T13:27:59.259799+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-28T20:29:26.369104+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-29T02:06:56.940149+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-29T02:19:50.846968+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5413,
+    "ask": null,
+    "timestamp_iso": "2025-12-29T02:23:48.973475+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-26 13:07:27.597",
+      "cotacaoCompra": 5.5407,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5712,
+    "ask": null,
+    "timestamp_iso": "2025-12-29T13:36:12.219727+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-29 10:04:45.663",
+      "cotacaoCompra": 5.5706,
+      "tipoBoletim": "Abertura"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5739,
+    "ask": null,
+    "timestamp_iso": "2025-12-29T20:30:49.187557+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-29 13:10:01.131",
+      "cotacaoCompra": 5.5733,
+      "tipoBoletim": "Fechamento PTAX"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5207,
+    "ask": null,
+    "timestamp_iso": "2025-12-30T13:34:51.886420+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-30 10:10:25.266",
+      "cotacaoCompra": 5.5201,
+      "tipoBoletim": "Abertura"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5024,
+    "ask": null,
+    "timestamp_iso": "2025-12-30T20:29:24.101645+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-30 13:12:00.341",
+      "cotacaoCompra": 5.5018,
+      "tipoBoletim": "Fechamento PTAX"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5024,
+    "ask": null,
+    "timestamp_iso": "2025-12-31T13:31:35.175557+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-31 10:06:24.183",
+      "cotacaoCompra": 5.5018,
+      "tipoBoletim": "Fechamento PTAX"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5024,
+    "ask": null,
+    "timestamp_iso": "2025-12-31T20:29:22.537517+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-31 10:06:24.183",
+      "cotacaoCompra": 5.5018,
+      "tipoBoletim": "Fechamento PTAX"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5024,
+    "ask": null,
+    "timestamp_iso": "2026-01-01T13:32:12.536095+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-31 10:06:24.183",
+      "cotacaoCompra": 5.5018,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.5024,
+    "ask": null,
+    "timestamp_iso": "2026-01-01T20:30:25.203580+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2025-12-31 10:06:24.183",
+      "cotacaoCompra": 5.5018,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.4328,
+    "ask": null,
+    "timestamp_iso": "2026-01-02T13:31:49.815537+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-02 10:02:27.416",
+      "cotacaoCompra": 5.4322,
+      "tipoBoletim": "Abertura"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.4372,
+    "ask": null,
+    "timestamp_iso": "2026-01-02T20:28:34.628306+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-02 13:03:33.254",
+      "cotacaoCompra": 5.4366,
+      "tipoBoletim": "Fechamento PTAX"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.4372,
+    "ask": null,
+    "timestamp_iso": "2026-01-03T13:27:38.526091+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-02 13:03:33.254",
+      "cotacaoCompra": 5.4366,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.4372,
+    "ask": null,
+    "timestamp_iso": "2026-01-03T20:29:05.075776+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-02 13:03:33.254",
+      "cotacaoCompra": 5.4366,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.4372,
+    "ask": null,
+    "timestamp_iso": "2026-01-04T13:28:23.388426+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-02 13:03:33.254",
+      "cotacaoCompra": 5.4366,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.4372,
+    "ask": null,
+    "timestamp_iso": "2026-01-04T20:29:30.118330+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-02 13:03:33.254",
+      "cotacaoCompra": 5.4366,
+      "tipoBoletim": "Fechamento"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.4424,
+    "ask": null,
+    "timestamp_iso": "2026-01-05T13:39:24.170820+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-05 10:06:26.51",
+      "cotacaoCompra": 5.4418,
+      "tipoBoletim": "Abertura"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.4351,
+    "ask": null,
+    "timestamp_iso": "2026-01-05T20:32:09.234728+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-05 13:10:14.896",
+      "cotacaoCompra": 5.4345,
+      "tipoBoletim": "Fechamento PTAX"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.3965,
+    "ask": null,
+    "timestamp_iso": "2026-01-06T13:36:24.764907+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-06 10:11:27.803",
+      "cotacaoCompra": 5.3959,
+      "tipoBoletim": "Abertura"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.3797,
+    "ask": null,
+    "timestamp_iso": "2026-01-06T20:30:46.980128+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-06 13:12:07.358",
+      "cotacaoCompra": 5.3791,
+      "tipoBoletim": "Fechamento PTAX"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.3851,
+    "ask": null,
+    "timestamp_iso": "2026-01-07T13:38:14.403648+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-07 10:05:25.683",
+      "cotacaoCompra": 5.3845,
+      "tipoBoletim": "Abertura"
+    }
+  },
+  {
+    "pair": "USD/BRL",
+    "bid": 5.388,
+    "ask": null,
+    "timestamp_iso": "2026-01-07T20:32:14.968771+00:00",
+    "source": "BCB PTAX",
+    "raw": {
+      "dataHoraCotacao": "2026-01-07 13:06:27.001",
+      "cotacaoCompra": 5.3874,
+      "tipoBoletim": "Fechamento PTAX"
+    }
+  }
+]
